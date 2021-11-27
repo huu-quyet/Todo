@@ -1,0 +1,14 @@
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+form input {
+  flex-grow: 1;
+  margin-right: 2rem;
+  font-size: inherit;
+  border-color: #fbbf24;
+  border-radius: 6px;
+  padding: 0.2rem 1rem;
+}

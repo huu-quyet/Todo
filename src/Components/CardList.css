@@ -1,0 +1,54 @@
+.card {
+  text-align: left;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  background: #fef3c7;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.card--title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card--title p {
+  color: #b45309;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul i {
+  border: 1px solid seagreen;
+  text-align: center;
+  width: 5%;
+  z-index: 10;
+  padding: 6px 0;
+  display: inline-flex;
+  justify-content: center;
+  color: #b45309;
+  border-radius: 6px;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+.card ul li div {
+  padding: 1rem 0;
+  cursor: pointer;
+  width: 85%;
+  display: inline-block;
+}
+
+.card li {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(241, 241, 77);
+}
+
+.done {
+  color: #9ca3af;
+  text-decoration-line: line-through;
+}
