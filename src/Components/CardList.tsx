@@ -2,7 +2,7 @@ import React from 'react';
 import TaskContext from '../Store/TaskS-context';
 import FilterButton from '../UI/FilterButton';
 import Card from './Card';
-import './CardList.css';
+import classes from './CardList.module.css';
 
 interface State {
   listOption: string[];
@@ -15,8 +15,8 @@ class CardList extends React.Component<any, State> {
 
   render() {
     return (
-      <div className="card">
-        <div className="card--title">
+      <div className={classes.card}>
+        <div className={classes['card--title']}>
           <p>List: </p>
           <FilterButton
             selectList={this.state.listOption}

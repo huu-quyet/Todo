@@ -1,5 +1,5 @@
 import React from 'react';
-import './Button.css';
+import { StyledButton } from '../styled-components';
 
 type Props = {
   onButtonSubmit: (e: any) => void;
@@ -9,7 +9,13 @@ class Button extends React.Component<Props> {
   render() {
     return (
       <React.Fragment>
-        <button onClick={this.props.onButtonSubmit}>+</button>
+        <StyledButton
+          mainColor="#10b981"
+          secondColor="white"
+          onClick={this.props.onButtonSubmit}
+        >
+          +
+        </StyledButton>
       </React.Fragment>
     );
   }

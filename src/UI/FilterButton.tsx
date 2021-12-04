@@ -1,6 +1,6 @@
 import React from 'react';
 import TaskContext from '../Store/TaskS-context';
-import './FilterButton.css';
+import { FilterSelection } from '../styled-components';
 
 type Props = {
   selectList: string[];
@@ -14,11 +14,14 @@ class FilterButton extends React.Component<Props> {
 
   render() {
     return (
-      <select value={this.context.state.typeFilter} onChange={this.onSelect}>
+      <FilterSelection
+        value={this.context.state.typeFilter}
+        onChange={this.onSelect}
+      >
         {this.props.selectList.map((el, index) => {
           return <option key={index}>{el}</option>;
         })}
-      </select>
+      </FilterSelection>
     );
   }
 }

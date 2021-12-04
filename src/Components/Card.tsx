@@ -1,5 +1,6 @@
 import React from 'react';
 import { Task } from '../App';
+import classes from './CardList.module.css';
 import './AddTask.css';
 
 type Props = {
@@ -29,7 +30,7 @@ class Card extends React.Component<Props, State> {
     return (
       <li onMouseEnter={this._onHover} onMouseLeave={this._onLeave}>
         <div
-          className={this.props.task.status ? 'done' : ''}
+          className={this.props.task.status ? classes.done : ''}
           onClick={this.props.onDone}
         >
           {' '}
